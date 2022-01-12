@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3366DACB341BD785B228B6FC /* Pods_NGPocDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5749D6DFBE5E15C88C9206D8 /* Pods_NGPocDemo.framework */; };
 		9AC2ECF8278C313A00B073F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2ECF7278C313A00B073F9 /* AppDelegate.swift */; };
 		9AC2ECFA278C313A00B073F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2ECF9278C313A00B073F9 /* SceneDelegate.swift */; };
 		9AC2ECFC278C313A00B073F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC2ECFB278C313A00B073F9 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571E0FA5FDE7D140CE3DFFA2 /* Pods-NGPocDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPocDemo.debug.xcconfig"; path = "Target Support Files/Pods-NGPocDemo/Pods-NGPocDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5749D6DFBE5E15C88C9206D8 /* Pods_NGPocDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGPocDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC2ECF4278C313A00B073F9 /* NGPocDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGPocDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC2ECF7278C313A00B073F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AC2ECF9278C313A00B073F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		9AC2ED00278C313C00B073F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AC2ED03278C313C00B073F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AC2ED05278C313C00B073F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE585AAE4C4D9AB860EA285A /* Pods-NGPocDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGPocDemo.release.xcconfig"; path = "Target Support Files/Pods-NGPocDemo/Pods-NGPocDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3366DACB341BD785B228B6FC /* Pods_NGPocDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64414F58AF679D07332DE8C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				571E0FA5FDE7D140CE3DFFA2 /* Pods-NGPocDemo.debug.xcconfig */,
+				EE585AAE4C4D9AB860EA285A /* Pods-NGPocDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9AC2ECEB278C313A00B073F9 = {
 			isa = PBXGroup;
 			children = (
 				9AC2ECF6278C313A00B073F9 /* NGPocDemo */,
 				9AC2ECF5278C313A00B073F9 /* Products */,
+				64414F58AF679D07332DE8C2 /* Pods */,
+				EF37430058A8D8417F0A8E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = NGPocDemo;
 			sourceTree = "<group>";
 		};
+		EF37430058A8D8417F0A8E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5749D6DFBE5E15C88C9206D8 /* Pods_NGPocDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AC2ED08278C313C00B073F9 /* Build configuration list for PBXNativeTarget "NGPocDemo" */;
 			buildPhases = (
+				00F593E7A218A585A96F3EE1 /* [CP] Check Pods Manifest.lock */,
 				9AC2ECF0278C313A00B073F9 /* Sources */,
 				9AC2ECF1278C313A00B073F9 /* Frameworks */,
 				9AC2ECF2278C313A00B073F9 /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F593E7A218A585A96F3EE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGPocDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AC2ECF0278C313A00B073F9 /* Sources */ = {
@@ -284,12 +334,13 @@
 		};
 		9AC2ED09278C313C00B073F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571E0FA5FDE7D140CE3DFFA2 /* Pods-NGPocDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = UNJ6ZB598Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NGPocDemo/Info.plist;
@@ -298,11 +349,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmax.ng.NGPocDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -314,12 +366,13 @@
 		};
 		9AC2ED0A278C313C00B073F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE585AAE4C4D9AB860EA285A /* Pods-NGPocDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = UNJ6ZB598Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NGPocDemo/Info.plist;
@@ -328,11 +381,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmax.ng.NGPocDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
