@@ -1,0 +1,3 @@
+Publish App to Store from TestFlight via Jenkins
+Start making a Jenkins pipeline
+Build should be auto incremented in pipeline
